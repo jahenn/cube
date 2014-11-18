@@ -1,0 +1,29 @@
+doctype html
+html
+	head
+		title= title
+		link(rel='stylesheet', href='/bs/css/bootstrap.css')
+		link(rel='stylesheet', href='/font-awesome/css/font-awesome.css')
+		script(type='text/javascript', src='/js/jquery.js')
+		script(type='text/javascript', src='/bs/js/bootstrap.js')
+	body
+	nav(class='navbar navbar-default', role='navigation')
+		div(class='navbar-header')
+			button(class='navbar-toggle', type='button', data-toggle='collapse', data-target='.navbar-ex1-collapse')
+				span(class='sr-only')
+				span(class='icon-bar')
+				span(class='icon-bar')
+				span(class='icon-bar')
+			// a(class='navbar-brand') Cube
+
+		div(class='collapse navbar-collapse navbar-ex1-collapse')
+			ul(class='nav navbar-nav')
+				li(class='active')
+					a(href='/') 
+						i(class='fa fa-home fa-2x')
+
+	.container
+		block content
+
+
+
