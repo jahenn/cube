@@ -1,0 +1,20 @@
+extends layout
+block content
+	h1 #{title}
+	ol(class='breadcrumb')
+		li
+			a(href='#') Home
+		li
+			a(href='#') Users
+
+	table.table
+		thead
+			tr
+				th ID
+				th Username
+				th Password
+
+
+
+	//Custom scripts
+	script(type='text/javascript', src='/js/users_index.js')
